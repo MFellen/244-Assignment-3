@@ -140,8 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="244 Assignment 3.cpp" />
+    <ClCompile Include="edge.cpp" />
+    <ClCompile Include="undirected.cpp" />
+    <ClCompile Include="vertex.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="edge.h" />
+    <ClInclude Include="graph.h" />
+    <ClInclude Include="undirected.h" />
     <ClInclude Include="vertex.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
