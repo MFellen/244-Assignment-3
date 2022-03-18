@@ -4,9 +4,17 @@
 using namespace std;
 
 class Graph {
+protected:
+	Vertex* varray[20];
+	Edge* earray[20];
 public:
-	Graph();
-	virtual ~Graph();
+	Graph() {
+		for (int i = 0; i < 20; i++) {
+			varray[i] = nullptr;
+			earray[i] = nullptr;
+		}
+	};
+	virtual ~Graph() {};
 	virtual bool addVertex(Vertex& v) = 0;
 	virtual bool addVertices(Vertex* vArray) = 0; //the edges that connect also deleted
 	virtual bool removeVertex(Vertex& v) = 0;
